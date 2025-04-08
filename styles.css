@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 4px solid #00ccff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00ccff;
+}
+
+a {
+    color: #00ccff;
+}
+
+a:hover {
+    color: #6be1ff;
+}
+
+nav ul {
+    padding: 0;
+    margin: 15px 0 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid #00ccff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #1a1a1a;
+    outline: 3px solid #00ccff;
+    transform: scale(1.05);
+}
+
+.main-page {
+    background-color: #00ccff54;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+}
+
+h1, h2, h3 {
+    color: #00ccff;
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 20px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00ccff;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #A0A0A0;
+    margin-top: 8px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #111;
+    border: 1px solid #00ccff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+legend {
+    font-weight: bold;
+    color: #00ccff;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: 1200;
+    color: #00ccff;
+}
+
+#tipus-entrades label {
+    font-weight: 100;
+}
+
+input, textarea, button {
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #E0E0E0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #00ccff;
+    color: #0a0a0a;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0099cc;
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #00ccff;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #00ccff;
+}
+
+tfoot {
+    background-color: #111;
+    font-weight: bold;
+}
+
+#contacte {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #E0E0E0;
+    margin-top: 20px;
+    border-top: 4px solid #00ccff;
+}
+
+#xarxes-socials {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+    gap: 10px;
+}
+
+#copyright {
+    margin-top: 80px;
+    font-style: italic;
+}
+
+/* Estilos para los menús desplegables */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    border: 1px solid #00ccff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+    z-index: 1000;
+    min-width: 160px;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content .dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #00ccff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-content .dropdown-item:hover,
+.dropdown-content .dropdown-item:focus {
+    background-color: #1a1a1a;
+    outline: 3px solid #00ccff;
+    transform: scale(1.05);
+}
+
+.dropdown[data-open="true"] .dropdown-content {
+    display: block;
+}
+
+.dropdown-item:focus {
+    outline: 3px solid #00ccff;
+    background-color: #1a1a1a;
+}
+
+.nav-link[aria-expanded="true"] {
+    background-color: #1a1a1a;
+    outline: 3px solid #00ccff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-link {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid #00ccff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #1a1a1a;
+    outline: 3px solid #00ccff;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: #00ccff52;
+}
+
+/* Carousel container */
+.carousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust this as needed */
+    margin: 20px auto;
+}
+
+/* Carousel images */
+.carousel-container {
+    display: flex;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel button.prev {
+    left: 0;
+}
+
+.carousel button.next {
+    right: 0;
+}
+
+.carousel-container img {
+    width: 100%; /* Ensures the images take the full width of the container */
+    height: 400px; /* Fixed height for images */
+    max-height: 400px; /* Ensures images do not exceed the container height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .dropdown-item {
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+    }
+}
+

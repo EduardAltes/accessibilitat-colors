@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroFest 2025 - Extres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ElectroFest 2025</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link" aria-label="Anar a la pàgina principal" aria-haspopup="true" aria-expanded="false">Pàgina principal</a>
+                    <ul class="dropdown-content" role="menu">
+                        <li role="none"><a href="index.html#presentacio" class="dropdown-item" role="menuitem" aria-label="Anar a la presentació">Presentació</a></li>
+                        <li role="none"><a href="index.html#programa" class="dropdown-item" role="menuitem" aria-label="Anar al programa de l'esdeveniment">Programa</a></li>
+                        <li role="none"><a href="index.html#galeria" class="dropdown-item" role="menuitem" aria-label="Anar a la galeria d'imatges">Galeria</a></li>
+                        <li role="none"><a href="index.html#inscripcio" class="dropdown-item" role="menuitem" aria-label="Anar a la secció d'inscripció">Inscripció</a></li>
+                        <li role="none"><a href="index.html#contacte" class="dropdown-item" role="menuitem" aria-label="Anar a zona de contacte">Contacte</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="tallers.html" class="nav-link" aria-label="Anar a la pàgina d'extres" aria-haspopup="true" aria-expanded="false">Extres</a>
+                    <ul class="dropdown-content" role="menu">
+                        <li role="none"><a href="tallers.html#tallers" class="dropdown-item" role="menuitem" aria-label="Anar a la informació del tallers">Tallers</a></li>
+                        <li role="none"><a href="tallers.html#activitats" class="dropdown-item" role="menuitem" aria-label="Anar a la informació de les activitats">Activitats</a></li>
+                        <li role="none"><a href="tallers.html#colaboradors" class="dropdown-item" role="menuitem" aria-label="Anar a la secció sobre els col·laboradors">Col·laboradors</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="colors.html" class="nav-link active" aria-label="Anar a la pàgina d'extres" aria-haspopup="true" aria-expanded="false">Colors</a>
+                    <ul class="dropdown-content" role="menu">
+                        <li role="none"><a href="colors.html#firefox" class="dropdown-item" role="menuitem" aria-label="Anar a la ">Firefox</a></li>
+                        <li role="none"><a href="colors.html#colors" class="dropdown-item" role="menuitem" aria-label="Anar a les proves d'accessibilitat d'AreMyColorsAccessible">AreMyColorsAccessible</a></li>
+                        <li role="none"><a href="colors.html#extensions" class="dropdown-item" role="menuitem" aria-label="Anar a les proves d'accessibilitat amb extensions del navegador">Extensions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firefox">
+            <h2>Firefox</h2>
+            <div class="carousel" aria-label="Carrusel de proves amb Firefox">
+                <button class="prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-container">
+                    <img src="img/accessibility/firefox_acromatopsia.png" alt="Simulació d'acromatòpsia a Firefox">
+                    <img src="img/accessibility/firefox_contrast_loss.png" alt="Prova de pèrdua de contrast a Firefox">
+                    <img src="img/accessibility/firefox_euteranopia.png" alt="Simulació d'euteranòpsia a Firefox">
+                    <img src="img/accessibility/firefox_protanopia.png" alt="Simulació de protanòpsia a Firefox">
+                    <img src="img/accessibility/firefox_trianopia.png" alt="Simulació de tritanòpsia a Firefox">
+                </div>
+                <button class="next" aria-label="Següent">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="colors">
+            <h2>AreMyColorsAccessible</h2>
+            <div class="carousel" aria-label="Carrusel de proves amb AreMyColorsAccessible">
+                <button class="prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-container">
+                    <img src="img/accessibility/aremycolorsaccessible.png" alt="Prova de colors accessible 1">
+                    <img src="img/accessibility/aremycolorsaccessible2.png" alt="Prova de colors accessible 2">
+                    <img src="img/accessibility/aremycolorsaccessible3.png" alt="Prova de colors accessible 3">
+                    <img src="img/accessibility/aremycolorsaccessible4.png" alt="Prova de colors accessible 4">
+                    <img src="img/accessibility/aremycolorsaccessible5.png" alt="Prova de colors accessible 5">
+                </div>
+                <button class="next" aria-label="Següent">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="extensions">
+            <h2>Extensions</h2>
+            <div class="carousel" aria-label="Carrusel de proves amb extensions del navegador">
+                <button class="prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-container">
+                    <img src="img/accessibility/lighthouse.png" alt="Prova d'accessibilitat amb Lighthouse">
+                    <img src="img/accessibility/wcag_aa.png" alt="Validació WCAG nivell AA">
+                    <img src="img/accessibility/wcag_aaa.png" alt="Validació WCAG nivell AAA">
+                    <img src="img/accessibility/web_helper.png" alt="Prova amb Web Helper">
+                    <img src="img/accessibility/web_insights.png" alt="Prova amb Web Insights">
+                </div>
+                <button class="next" aria-label="Següent">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacte" role="contentinfo">
+        <h2>Contacte</h2>
+        <p>Per a més informació, contacteu amb nosaltres a <a href="mailto:info@electrofest2025.cat">info@electrofest2025.cat</a>.</p>
+        <p>Segueix-nos a les nostres xarxes socials per no perdre't cap novetat:</p>
+        <ul id="xarxes-socials">
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram (s'obre en una pestanya nova)">Instagram</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook (s'obre en una pestanya nova)">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter (s'obre en una pestanya nova)">Twitter</a></li>
+            <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok (s'obre en una pestanya nova)">TikTok</a></li>
+        </ul>        
+        <p id="copyright">ElectroFest 2025 - Eduard Altés Xifré</p>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html>
