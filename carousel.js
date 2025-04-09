@@ -3,23 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     carousels.forEach(carousel => {
         let index = 0;
-        const images = carousel.querySelectorAll(".carousel-container img");
+        const figures = carousel.querySelectorAll(".carousel-container figure");
         const prevButton = carousel.querySelector(".prev");
         const nextButton = carousel.querySelector(".next");
 
         function updateCarousel() {
-            images.forEach((img, i) => {
-                img.style.display = i === index ? "block" : "none";
+            figures.forEach((figure, i) => {
+                figure.style.display = i === index ? "block" : "none";
+                const caption = figure.querySelector("figcaption");
+                if (caption) {
+                    caption.style.display = i === index ? "block" : "none";
+                }
             });
         }
 
         prevButton.addEventListener("click", function () {
-            index = (index > 0) ? index - 1 : images.length - 1;
+            index = (index > 0) ? index - 1 : figures.length - 1;
             updateCarousel();
         });
 
         nextButton.addEventListener("click", function () {
-            index = (index < images.length - 1) ? index + 1 : 0;
+            index = (index < figures.length - 1) ? index + 1 : 0;
             updateCarousel();
         });
 

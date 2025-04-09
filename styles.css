@@ -333,12 +333,6 @@ tfoot {
     right: 0;
 }
 
-.carousel-container img {
-    width: 100%; /* Ensures the images take the full width of the container */
-    height: 400px; /* Fixed height for images */
-    max-height: 400px; /* Ensures images do not exceed the container height */
-    object-fit: cover; /* Ensures the image fills the space without distortion */
-}
 
 .carousel-container {
     display: flex;
